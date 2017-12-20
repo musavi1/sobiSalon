@@ -1,0 +1,139 @@
+
+
+<div class="boxed-layout" >
+
+
+  <!-- end #header -->
+  <div class="clearfix"></div>
+  <!-- end .clearfix --> 
+
+  <!-- Page Content
+  <!-- Page Title
+
+================================================== -->
+  <!--<div class="page-title">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>Contact us</h1>
+          <ol class="breadcrumb">
+            <li><a href="/1.html"><i class="fa fa-home"></i> HOME</a></li>
+            <li class="active"><i class="fa fa-file-text"></i> CONTACTS</li>
+          </ol>
+        </div>
+        &lt;!&ndash; /.col-md-12 &ndash;&gt;
+      </div>
+      &lt;!&ndash; /.row &ndash;&gt;
+    </div>
+    &lt;!&ndash; /.container &ndash;&gt;
+    
+  </div>
+  &lt;!&ndash; /.page-title &ndash;&gt; -->
+  
+  <!-- Contact Form
+================================================== -->
+  <div class="mb-100"></div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h3><strong>MAP</strong></h3>
+        <div class="titleline"></div>
+        <!-- end .titleline -->
+        <ng-map zoom="10" center="[34.044956, -84.357695]">
+          <marker position="[34.044956, -84.357695]" />
+          <shape name="circle" radius="400" center="[34.044956, -84.357695]" radius="4000" />
+          <control name="overviewMap" opened="true" />
+        </ng-map>
+        
+
+        <!-- end #map -->
+        <div class="mb-40"></div>
+
+        <!-- end .mb-40 --> 
+        
+      </div>
+      <!-- end .col-md-4 -->
+      
+      <div class="col-md-4">
+        <div class="contactform">
+          <h3><strong>CONTACT</strong> US</h3>
+          <div class="titleline"></div>
+          <!-- end .titleline -->
+          <form id="commentForm" class="cmxform" method="post" action="contact.php">
+            <fieldset>
+              <label for="cname"><span><i class="fa fa-asterisk"></i></span>Name</label>
+              <input id="cname" name="name" minlength="2" type="text" placeholder="Name" required>
+              <label for="cemail"><span><i class="fa fa-asterisk"></i></span>E-mail</label>
+              <input id="cemail" type="email" name="email" placeholder="E-mail" required>
+              <label for="subject"><span><i class="fa fa-asterisk"></i></span> Subject</label>
+              <input id="subject" type="text" name="subject" placeholder="Subject" required>
+              <label for="ccomment"><span><i class="fa fa-asterisk"></i></span>Message</label>
+              <textarea id="ccomment" name="comment" placeholder="Message" required></textarea>
+              <label><span><i class="fa fa-asterisk"></i></span>Anti-spam {{2}}+{{5}}=</label>
+              <input class="answer" name="answer" required>
+              <input class="submit btn btn-white" name="submit" type="submit" value="Submit">
+            </fieldset>
+          </form>
+          <div id="message"></div>
+          <!-- end #message --> 
+        </div>
+        <!-- end .contactform --> 
+        
+      </div>
+      <!-- end .col-md-4 -->
+      
+      <div class="col-md-4">
+        <div class="sidebar">
+          <h3>CONTACT <strong>INFORMATION</strong></h3>
+          <div class="titleline"></div>
+          <!-- end .titleline -->
+          
+          <ul class="sidebar-info">
+            <li><i class="fa fa-map-marker"></i><span>Address:</span><br>
+              90 EAST CROSSVILLE ROAD </br>  </br> ROSWELL, GA, 30075 </br> </li>
+            <li><i class="fa fa-phone"></i><span>Phone number:</span><br>
+              (770) 641-7007</li>
+            <li><i class="fa fa-envelope"></i><span>E-mail:</span><br>
+              <a href="mailto:#">mail@sobisalon.com</a></li>
+          </ul>
+          <div class="clearfix"></div>
+          <ul class="social-icons social-color">
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://www.facebook.com/Sobi-Salon-1375892116007356/?ref=nf"><i class="fa fa-facebook"></i></a></li>
+            <!-- <li><a href="#"><i class="fa fa-flickr"></i></a></li>
+            <li><a href="#"><i class="fa fa-skype"></i></a></li>
+            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li> -->
+          </ul>
+          <div class="clearfix"></div>
+        </div>
+        <!-- end .sidebar --> 
+        
+      </div>
+      <!-- end .col-md-4 --> 
+      
+    </div>
+    <!-- end .row --> 
+  </div>
+  <!-- end .container -->
+  <div class="mb-150"></div>
+  <!-- end .mb-150 -->
+
+  <!-- Footer
+================================================== -->
+
+  
+  <!-- Copyright
+================================================== -->
+  <div ng-include="'footer.html'" ></div>
+
+<!-- Java Script
+================================================== -->
+
+
+
+
+
+
+
