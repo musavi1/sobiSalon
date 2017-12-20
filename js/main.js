@@ -5,12 +5,12 @@
     var app = angular.module('myApp',['ngRoute', 'ngMap']);
     app.config(['$routeProvider', function($routeProvider){
         $routeProvider
-            .when('/index' ,{templateUrl:'1.html', controller: 'thirdCtrl'})
-            .when('' ,{templateUrl:'1.html', controller: 'thirdCtrl'})
-            .when('/1',{templateUrl:'1.html', controller: 'thirdCtrl'})
+            .when('/index' ,{templateUrl:'1delete.html', controller: 'thirdCtrl'})
+            .when('' ,{templateUrl:'1delete.html', controller: 'thirdCtrl'})
+            .when('/1',{templateUrl:'1delete.html', controller: 'thirdCtrl'})
             .when('/service',{templateUrl:'service.html', controller: 'secondCtrl' })
             .when('/contact',{templateUrl:'contact.html', controller: 'secondCtrl'})
-            .otherwise({redirectTo:'1.html', controller: 'thirdCtrl'});
+            .otherwise({redirectTo:'1delete.html', controller: 'thirdCtrl'});
 
 
 
